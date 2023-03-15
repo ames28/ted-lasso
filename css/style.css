@@ -1,0 +1,741 @@
+/* css reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/****** end reset *******/
+/* SET TYPOGRAPHY */
+a {
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 20px;
+}
+
+a.right {
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 50px;
+}
+
+/* slanted header */
+h1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: #fff;
+  font-size: 40px
+}
+
+/* sub headers */
+h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: #fff;
+}
+
+/* apple ad */
+h4 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* 'played by' text */
+h5 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #C6C1FF;
+}
+
+/* body */
+p {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* END TYPOGRAPHY */
+/* grid */
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  width: 100%;
+}
+
+/***** grid end ******/
+/* NAV MENU STYLING */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #221d5d;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav a.right {
+  margin-right: auto;
+}
+
+.top-nav a:not(:first-child) {
+  display: none;
+}
+
+.top-nav a.icon {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-nav a {
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  color: #E9241C;
+}
+
+.top-nav a.logo:hover {
+  color: #E9241C;
+}
+
+.top-nav a.icon:hover {
+  color: #E9241C;
+}
+
+/* this css controls how the menu will look on smaller screens */
+.top-nav.responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav.responsive a.icon {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  /* these values need to match the ones above */
+}
+
+.top-nav.responsive a {
+  display: block;
+  text-align: right;
+}
+
+/******** nav end ****/
+/* FOOTER */
+footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #221d5d;
+  padding: 1rem;
+  flex-direction: row;
+}
+
+footer .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a p:hover {
+  color: #E9241C;
+}
+
+/* SECTIONS COLOURS */
+#gallery {
+  background-color: #E9241C;
+  padding: 2rem;
+}
+
+#trailers {
+  background-color: #F4D137;
+  padding: 2rem;
+}
+
+#characters {
+  background-color: #E9241C;
+  padding: 2rem;
+}
+
+#twitter {
+  background-color: #0176EA;
+  padding: 2rem;
+}
+
+/* LANDING */
+#landing {
+  padding-top: 5rem;
+}
+
+.gif {
+  margin-top: 1rem;
+}
+
+.gif img {
+  width: 100%;
+  /* width of container */
+  height: 35vh;
+  /* height of container */
+  object-fit: cover;
+}
+
+/* ABOUT */
+#about img {
+  display: block;
+  width: 100%;
+}
+
+#about {
+  background-image: none;
+}
+
+#about .text {
+  background: #E9241C
+}
+
+#about h1 {
+  padding: 1rem 2rem 0.5rem 2rem;
+}
+
+#about p {
+  padding: 0.5rem 2rem 1rem 2rem;
+}
+
+/* QUOTES */
+.quote {
+  padding: 2rem;
+  font-size: 10px;
+  text-align: center;
+}
+
+.quote h2 {
+  color: #221d5d;
+}
+
+/* GALLERY  */
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#gallery .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 1rem;
+}
+
+/* TRAILERS */
+#trailers .col h2 {
+  font-size: 30px;
+  padding-top: 1rem;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  padding-bottom: 56.25%;
+}
+
+.iframe-container iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ad */
+#parent {
+  display: flex;
+  justify-content: center;
+}
+
+#parent .row {
+  align-items: center;
+}
+
+.background {
+  background: #000;
+  height: auto;
+  width: 80vw;
+  border-radius: 2.5rem;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  border: solid 4px #F4D137;
+}
+
+.background:hover {
+  border: solid 4px #fff;
+}
+
+#parent img {
+  height: 10vh;
+}
+
+#parent a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.streaming-content {
+  text-align: center;
+}
+
+.streaming-content h4 {
+  padding-top: 1rem;
+}
+
+.streaming-content p {
+  font-size: 15px;
+}
+
+/* CHARACTERS */
+#characters .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.character img {
+  border-radius: 1000px;
+  width: 60%;
+  border: solid white 3px;
+}
+
+.character {
+  padding: 1rem;
+  align-items: center;
+  background-color: #221d5d;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+  width: 42%;
+  margin: 1rem;
+}
+
+.character p {
+  font-size: 16px;
+}
+
+.jamie {
+  display: none
+}
+
+.beard {
+  display: none
+}
+
+.nate {
+  display: none
+}
+
+.higgins {
+  display: none
+}
+
+#characters a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+#characters a:hover {
+  color: #221d5d;
+}
+
+.cast-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* TWITTER */
+#twitter .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#twitter .col.tweet-two {
+  display: none;
+}
+
+#twitter .col.tweet-three {
+  display: none;
+}
+
+/* TABLET MEDIA QUEREY */
+@media screen and (min-width: 800px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .col {
+    flex: 1;
+  }
+
+  /* TYPOGRAPHY */
+  a {
+    font-family: futura-pt, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  a.right {
+    font-family: futura-pt, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 50px;
+  }
+
+  /* slanted header */
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #fff;
+    font-size: 64px
+  }
+
+  /* sub headers */
+  h2 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #fff;
+  }
+
+  /* apple ad */
+  h4 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+  }
+
+  /* played by text */
+  h5 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #C6C1FF;
+  }
+
+  /* body */
+  p {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  /* CUSTOM STYLING */
+  /* LANDING */
+  .gif {
+    margin-top: 1rem;
+  }
+
+  .gif img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  /* ABOUT */
+  #about {
+    background-image: url(../images/ted-lasso-about-mobile.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: top;
+    align-items: center;
+  }
+
+  #about h1 {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: right;
+    padding: 1rem 2rem;
+    color: #fff;
+  }
+
+  #about p {
+    line-height: 30px;
+    text-align: right;
+    padding: 2rem;
+  }
+
+  #about .col {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+  }
+
+  #about .text {
+    background: none;
+    flex: 2;
+  }
+
+  #about img {
+    display: flex;
+    flex: 1;
+    display: none;
+  }
+
+  #gallery .three {
+    display: none
+  }
+
+  /* TRAILERS */
+  #trailers .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  #trailers .col h2 {
+    font-size: 40px;
+  }
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+  .iframe-container iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background {
+    height: 20vh;
+  }
+
+  #parent img {
+    height: auto;
+  }
+
+  /* CHARACTERS */
+  .jamie {
+    display: inline;
+  }
+
+  .beard {
+    display: inline;
+  }
+
+  .nate {
+    display: inline;
+  }
+
+  .higgins {
+    display: inline;
+  }
+
+  /* TWITTER  */
+  #twitter h4 {
+    font-size: 25px;
+  }
+
+  #twitter .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 1rem;
+  }
+
+  #twitter .col.tweet-one {
+    display: inline;
+  }
+
+  #twitter .col.tweet-two {
+    display: inline;
+  }
+
+  #twitter .col.tweet-three {
+    display: none;
+  }
+}
+
+/* LARGER SCREEN MEDIA QUERY */
+@media screen and (min-width: 960px) {
+
+  /* NAVIGATION */
+  .top-nav {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .top-nav a {
+    display: flex;
+  }
+
+  .top-nav a:not(:first-child) {
+    display: block;
+  }
+
+  .top-nav a.icon {
+    display: none;
+  }
+
+  nav {
+    align-items: center;
+  }
+
+  /* LANDING */
+  .gif {
+    margin-top: 1rem;
+  }
+
+  .gif img {
+    width: 100%;
+    height: 79vh;
+    object-fit: cover;
+  }
+
+  /* GALLERY */
+  #gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #gallery .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 1rem;
+  }
+
+  #gallery .still-three {
+    display: inline
+  }
+
+  /* AD */
+  .background {
+    height: 25vh;
+    width: 50vw;
+  }
+
+  #parent img {
+    height: auto;
+  }
+
+  #parent h4 {
+    font-size: 23px;
+    padding-bottom: 0.5rem;
+  }
+
+  /* CHARACTERS */
+  #characters .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .character img {
+    border-radius: 1000px;
+    width: 60%;
+  }
+
+  .character {
+    padding: 1rem;
+    align-items: center;
+    background-color: #221d5d;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    margin: 1rem;
+  }
+
+  .character p {
+    font-size: 16px;
+  }
+
+  /* END CHARACTERS */
+  /* TWITTER */
+  #twitter .col.tweet-three {
+    display: inline;
+  }
+}
